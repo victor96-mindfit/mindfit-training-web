@@ -1,0 +1,106 @@
+backend:
+  name: github
+  repo: victor96-mindfit/mindfit-training-web
+  branch: main
+
+locale: es
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+publish_mode: simple
+
+# Estas dos direcciones las cambiaremos cuando Netlify publique la web
+site_url: "https://mindfit-training.netlify.app"
+display_url: "https://mindfit-training.netlify.app"
+
+logo_url: "/assets/logo.png"
+
+collections:
+  - name: "web"
+    label: "Editar web"
+    files:
+      - name: "contenido"
+        label: "Textos, servicios y contacto"
+        file: "content/site.json"
+        format: "json"
+
+        fields:
+          - label: "Portada y contacto"
+            name: "settings"
+            widget: "object"
+
+            fields:
+              - {label: "Texto superior", name: "eyebrow", widget: "string"}
+              - {label: "Título línea 1", name: "hero_line1", widget: "string"}
+              - {label: "Título línea 2", name: "hero_line2", widget: "string"}
+              - {label: "Título línea 3", name: "hero_line3", widget: "string"}
+              - {label: "Texto de portada", name: "hero_text", widget: "text"}
+
+              - {label: "Título filosofía", name: "philosophy_title", widget: "string"}
+              - {label: "Filosofía párrafo 1", name: "philosophy_p1", widget: "text"}
+              - {label: "Filosofía párrafo 2", name: "philosophy_p2", widget: "text"}
+              - {label: "Filosofía párrafo 3", name: "philosophy_p3", widget: "text"}
+
+              - {label: "Título MindFit Ciencia", name: "science_title", widget: "string"}
+              - {label: "Descripción MindFit Ciencia", name: "science_text", widget: "text"}
+
+              - {label: "WhatsApp", name: "whatsapp", widget: "string"}
+              - {label: "Teléfono Víctor", name: "phone_victor", widget: "string", required: false}
+              - {label: "Teléfono Antonio", name: "phone_antonio", widget: "string", required: false}
+              - {label: "Email", name: "email", widget: "string", required: false}
+              - {label: "Instagram", name: "instagram", widget: "string", required: false}
+
+          - label: "Servicios"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.name}}"
+
+            fields:
+              - {label: "Nombre", name: "name", widget: "string"}
+              - {label: "Descripción", name: "description", widget: "text"}
+              - {label: "Etiqueta", name: "tag", widget: "string"}
+              - label: "Color"
+                name: "color"
+                widget: "select"
+                options:
+                  - "green"
+                  - "purple"
+                  - "yellow"
+                  - "coral"
+                  - "orange"
+                  - "blue"
+
+          - label: "Artículos MindFit Ciencia"
+            name: "articles"
+            widget: "list"
+            summary: "{{fields.title}}"
+
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Identificador URL", name: "slug", widget: "string"}
+              - {label: "Categoría", name: "category", widget: "string"}
+              - {label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
+              - {label: "Tiempo de lectura", name: "read_time", widget: "string"}
+              - {label: "Subtítulo", name: "subtitle", widget: "text"}
+
+              - label: "Contenido"
+                name: "sections"
+                widget: "list"
+                summary: "{{fields.heading}}"
+
+                fields:
+                  - {label: "Título de sección", name: "heading", widget: "string"}
+                  - {label: "Texto", name: "body", widget: "text"}
+
+              - label: "Ideas clave"
+                name: "key_points"
+                widget: "list"
+                field:
+                  label: "Idea"
+                  name: "point"
+                  widget: "string"
+
+              - {label: "Referencia científica", name: "reference", widget: "text"}
+              - {label: "DOI", name: "doi", widget: "string", required: false}
+              - {label: "Enlace al estudio", name: "source_url", widget: "string", required: false}
