@@ -10,9 +10,9 @@ public_folder: "/assets/uploads"
 
 publish_mode: simple
 
-# Estas dos direcciones las cambiaremos cuando Netlify publique la web
-site_url: "https://mindfit-training.netlify.app"
-display_url: "https://mindfit-training.netlify.app"
+# Web publicada en GitHub Pages
+site_url: "https://victor96-mindfit.github.io/mindfit-training-web/"
+display_url: "https://victor96-mindfit.github.io/mindfit-training-web/"
 
 logo_url: "/assets/logo.png"
 
