@@ -1,0 +1,102 @@
+{
+  "settings": {
+    "eyebrow": "ENTRENAMIENTO FUNCIONAL INTELIGENTE · ADAPTADO A TI",
+    "hero_line1": "ENTRENA.",
+    "hero_line2": "MUÉVETE.",
+    "hero_line3": "VIVE MEJOR.",
+    "hero_text": "Una sala boutique de entrenamiento donde la fuerza, el movimiento y la salud se trabajan con criterio, atención cercana y programas adaptados a cada persona.",
+    "philosophy_title": "ENTRENAR CON SENTIDO",
+    "philosophy_p1": "En MindFit Training entendemos el entrenamiento como mucho más que hacer ejercicio. Nuestro objetivo es ayudarte a moverte mejor, ser más fuerte y construir una condición física que tenga transferencia real a tu vida.",
+    "philosophy_p2": "Trabajamos desde una visión individualizada, adaptando el entrenamiento a tu nivel, experiencia, objetivos y necesidades. No creemos en programas iguales para todos: creemos en personas diferentes que necesitan estímulos diferentes.",
+    "philosophy_p3": "Fuerza, movilidad, coordinación, capacidad cardiovascular y autonomía forman parte de una misma idea: entrenar hoy para vivir mejor mañana.",
+    "science_title": "MINDFIT CIENCIA",
+    "science_text": "Traducimos la investigación científica sobre entrenamiento, fuerza, salud y movimiento a un lenguaje sencillo y útil. Ciencia que puedes entender y aplicar.",
+    "whatsapp": "34660250239",
+    "phone_victor": "660250239",
+    "phone_antonio": "637951161",
+    "email": "mindfitkids@gmail.com",
+    "instagram": "mindfit.trainings"
+  },
+  "services": [
+    {
+      "name": "MINDFIT TRAINING",
+      "description": "Entrenamiento funcional orientado a mejorar fuerza, movilidad, estabilidad, coordinación y condición física general. Sesiones dinámicas y adaptadas para ayudarte a moverte mejor, sentirte más capaz y disfrutar del proceso.",
+      "tag": "ENTRENAMIENTO FUNCIONAL",
+      "color": "green"
+    },
+    {
+      "name": "MINDFIT STRENGTH",
+      "description": "Entrenamiento centrado específicamente en el desarrollo de la fuerza. Un programa progresivo para mejorar la salud muscular y ósea, aumentar la capacidad física y aprender a entrenar la fuerza con una técnica adecuada.",
+      "tag": "FUERZA",
+      "color": "purple"
+    },
+    {
+      "name": "MINDFIT PATOLOGÍAS",
+      "description": "Ejercicio individualizado y adaptado a personas con patologías, condiciones crónicas o necesidades específicas. Ajustamos el entrenamiento a cada caso para mejorar capacidad funcional, autonomía y calidad de vida.",
+      "tag": "EJERCICIO Y SALUD",
+      "color": "yellow"
+    },
+    {
+      "name": "MINDFIT KIDS",
+      "description": "Entrenamiento para niños y adolescentes mediante actividades adaptadas, juegos y ejercicio físico. Trabajamos fuerza, coordinación, equilibrio, agilidad y habilidades motrices creando una relación positiva con el movimiento.",
+      "tag": "NIÑOS Y ADOLESCENTES",
+      "color": "coral"
+    },
+    {
+      "name": "ESCUELA DE ESPALDA",
+      "description": "Programa de ejercicio orientado al cuidado de la espalda mediante fuerza, movilidad y control del movimiento. El entrenamiento se adapta a las características y necesidades de cada persona.",
+      "tag": "ESPALDA Y MOVIMIENTO",
+      "color": "orange"
+    },
+    {
+      "name": "DEKA TRAINING",
+      "description": "Entrenamiento híbrido que combina fuerza y trabajo cardiovascular mediante sesiones estructuradas y progresivas. Una propuesta para quienes quieren mejorar resistencia, potencia y rendimiento físico global.",
+      "tag": "HYBRID TRAINING",
+      "color": "blue"
+    },
+    {
+      "name": "ENTRENAMIENTO INDIVIDUALIZADO",
+      "description": "Un servicio completamente personalizado. Evaluamos tu punto de partida, necesidades y objetivos para diseñar y acompañar un programa de entrenamiento específicamente pensado para ti.",
+      "tag": "1 TO 1",
+      "color": "green"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Entrenamiento de fuerza en niños y adolescentes: mucho más que levantar peso",
+      "slug": "entrenamiento-fuerza-ninos-adolescentes",
+      "category": "FUERZA · INFANCIA Y ADOLESCENCIA",
+      "date": "2026-10-02",
+      "read_time": "5 min",
+      "subtitle": "Bien planteado y adaptado a la edad, el entrenamiento de fuerza puede formar parte de un programa de acondicionamiento físico amplio para niños y adolescentes.",
+      "sections": [
+        {
+          "heading": "¿Qué entendemos por entrenamiento de fuerza?",
+          "body": "Cuando hablamos de fuerza en niños y adolescentes no hablamos simplemente de levantar grandes cargas. El trabajo puede realizarse con el propio peso corporal, resistencias externas, balones medicinales, ejercicios asistidos y otras tareas adaptadas a la edad, experiencia y capacidad de cada persona."
+        },
+        {
+          "heading": "No se trata solo de ser más fuerte",
+          "body": "El entrenamiento puede integrarse dentro de programas más amplios de actividad física que incluyan movilidad, equilibrio, coordinación y otras capacidades físicas. El objetivo es construir una base motriz amplia y progresiva."
+        },
+        {
+          "heading": "Adaptar antes que copiar",
+          "body": "Los niños y adolescentes no son adultos pequeños. El ejercicio debe ajustarse a su desarrollo, experiencia y capacidad técnica. La progresión, la supervisión y la calidad del movimiento son elementos fundamentales."
+        },
+        {
+          "heading": "Nuestra forma de entenderlo en MindFit",
+          "body": "En MindFit Kids utilizamos el entrenamiento como una herramienta educativa. Queremos que niños y adolescentes aprendan a moverse, desarrollen sus capacidades físicas y construyan hábitos activos en un entorno seguro, progresivo y motivante."
+        }
+      ],
+      "key_points": [
+        "El trabajo de fuerza puede utilizar el propio peso corporal y diferentes tipos de resistencia.",
+        "Debe integrarse con coordinación, equilibrio, movilidad y otras capacidades físicas.",
+        "La dificultad debe adaptarse a la edad, experiencia y capacidad individual.",
+        "La técnica, la progresión y la supervisión son elementos fundamentales.",
+        "El objetivo no es especializar precozmente, sino construir una base física amplia."
+      ],
+      "reference": "Artículo divulgativo elaborado por MindFit Training a partir del material científico y formativo seleccionado por el equipo. El contenido tiene finalidad educativa y no sustituye una valoración individual.",
+      "doi": "",
+      "source_url": ""
+    }
+  ]
+}
