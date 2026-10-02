@@ -4,47 +4,37 @@ backend:
   branch: main
 
 locale: es
-
 media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
-
+public_folder: "/mindfit-training-web/assets/uploads"
 publish_mode: simple
-
-# Web publicada en GitHub Pages
 site_url: "https://victor96-mindfit.github.io/mindfit-training-web/"
 display_url: "https://victor96-mindfit.github.io/mindfit-training-web/"
-
-logo_url: "/assets/logo.png"
+logo_url: "/mindfit-training-web/assets/logo.png"
 
 collections:
   - name: "web"
     label: "Editar web"
     files:
       - name: "contenido"
-        label: "Textos, servicios y contacto"
+        label: "Textos, servicios, contacto y ciencia"
         file: "content/site.json"
         format: "json"
-
         fields:
           - label: "Portada y contacto"
             name: "settings"
             widget: "object"
-
             fields:
               - {label: "Texto superior", name: "eyebrow", widget: "string"}
               - {label: "Título línea 1", name: "hero_line1", widget: "string"}
               - {label: "Título línea 2", name: "hero_line2", widget: "string"}
               - {label: "Título línea 3", name: "hero_line3", widget: "string"}
               - {label: "Texto de portada", name: "hero_text", widget: "text"}
-
               - {label: "Título filosofía", name: "philosophy_title", widget: "string"}
               - {label: "Filosofía párrafo 1", name: "philosophy_p1", widget: "text"}
               - {label: "Filosofía párrafo 2", name: "philosophy_p2", widget: "text"}
               - {label: "Filosofía párrafo 3", name: "philosophy_p3", widget: "text"}
-
               - {label: "Título MindFit Ciencia", name: "science_title", widget: "string"}
               - {label: "Descripción MindFit Ciencia", name: "science_text", widget: "text"}
-
               - {label: "WhatsApp", name: "whatsapp", widget: "string"}
               - {label: "Teléfono Víctor", name: "phone_victor", widget: "string", required: false}
               - {label: "Teléfono Antonio", name: "phone_antonio", widget: "string", required: false}
@@ -55,7 +45,6 @@ collections:
             name: "services"
             widget: "list"
             summary: "{{fields.name}}"
-
             fields:
               - {label: "Nombre", name: "name", widget: "string"}
               - {label: "Descripción", name: "description", widget: "text"}
@@ -63,44 +52,32 @@ collections:
               - label: "Color"
                 name: "color"
                 widget: "select"
-                options:
-                  - "green"
-                  - "purple"
-                  - "yellow"
-                  - "coral"
-                  - "orange"
-                  - "blue"
+                options: ["green", "purple", "yellow", "coral", "orange", "blue"]
 
           - label: "Artículos MindFit Ciencia"
             name: "articles"
             widget: "list"
             summary: "{{fields.title}}"
-
             fields:
               - {label: "Título", name: "title", widget: "string"}
-              - {label: "Identificador URL", name: "slug", widget: "string"}
+              - {label: "Identificador URL", name: "slug", widget: "string", hint: "Sin espacios. Ej.: fuerza-y-salud"}
               - {label: "Categoría", name: "category", widget: "string"}
-              - {label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
-              - {label: "Tiempo de lectura", name: "read_time", widget: "string"}
+              - {label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
+              - {label: "Tiempo de lectura", name: "read_time", widget: "string", default: "5 min"}
               - {label: "Subtítulo", name: "subtitle", widget: "text"}
-
+              - {label: "Introducción", name: "intro", widget: "text", required: false}
               - label: "Contenido"
                 name: "sections"
                 widget: "list"
                 summary: "{{fields.heading}}"
-
                 fields:
                   - {label: "Título de sección", name: "heading", widget: "string"}
-                  - {label: "Texto", name: "body", widget: "text"}
-
+                  - {label: "Texto", name: "text", widget: "text"}
               - label: "Ideas clave"
-                name: "key_points"
+                name: "takeaways"
                 widget: "list"
-                field:
-                  label: "Idea"
-                  name: "point"
-                  widget: "string"
-
+                field: {label: "Idea", name: "item", widget: "string"}
               - {label: "Referencia científica", name: "reference", widget: "text"}
               - {label: "DOI", name: "doi", widget: "string", required: false}
               - {label: "Enlace al estudio", name: "source_url", widget: "string", required: false}
+              - {label: "Destacado", name: "featured", widget: "boolean", default: false, required: false}
