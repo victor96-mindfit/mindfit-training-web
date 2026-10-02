@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: victor96-mindfit/mindfit-training-web
+  name: turbo-github
+  turbo_site_id: 459520a2-52c9-4eba-a5a9-c402f522e8be
   branch: main
 
 locale: es
