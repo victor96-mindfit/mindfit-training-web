@@ -65,19 +65,19 @@ collections:
               - {label: "Fecha", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
               - {label: "Tiempo de lectura", name: "read_time", widget: "string", default: "5 min"}
               - {label: "Subtítulo", name: "subtitle", widget: "text"}
-              - {label: "Introducción", name: "intro", widget: "text", required: false}
+              - {label: "Introducción", name: "intro", widget: "markdown", required: false, minimal: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"]}
               - label: "Contenido"
                 name: "sections"
                 widget: "list"
                 summary: "{{fields.heading}}"
                 fields:
                   - {label: "Título de sección", name: "heading", widget: "string"}
-                  - {label: "Texto", name: "text", widget: "text"}
+                  - {label: "Texto", name: "text", widget: "markdown", minimal: false, buttons: ["bold", "italic", "link", "heading-two", "heading-three", "quote", "bulleted-list", "numbered-list"], hint: "Editor con formato: negrita, cursiva, títulos, enlaces, citas, listas con puntos y listas numeradas. Al pegar texto, revisa la vista previa antes de publicar."}
               - label: "Ideas clave"
                 name: "takeaways"
                 widget: "list"
                 field: {label: "Idea", name: "item", widget: "string"}
-              - {label: "Referencia científica", name: "reference", widget: "text"}
+              - {label: "Referencia científica", name: "reference", widget: "markdown", minimal: true, buttons: ["bold", "italic", "link"]}
               - {label: "DOI", name: "doi", widget: "string", required: false}
               - {label: "Enlace al estudio", name: "source_url", widget: "string", required: false}
               - {label: "Destacado", name: "featured", widget: "boolean", default: false, required: false}
