@@ -80,4 +80,5 @@ collections:
               - {label: "Referencia científica", name: "reference", widget: "markdown", minimal: true, buttons: ["bold", "italic", "link"]}
               - {label: "DOI", name: "doi", widget: "string", required: false}
               - {label: "Enlace al estudio", name: "source_url", widget: "string", required: false}
+              - {label: "Vídeo resumen del artículo (opcional)", name: "video_url", widget: "string", required: false, hint: "Pega aquí el enlace del vídeo (YouTube, YouTube Shorts o Vimeo). Si lo dejas vacío, no aparecerá nada en el artículo."}
               - {label: "Destacado", name: "featured", widget: "boolean", default: false, required: false}
