@@ -8,10 +8,26 @@
 </head>
 <body>
   <script>window.CMS_MANUAL_INIT = true;</script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.17.0-beta.0/dist/decap-cms.js"></script>
   <script>
-    // Iniciar Decap una sola vez, dejando que lea admin/config.yml.
-    CMS.init();
+    (async function () {
+      try {
+        const response = await fetch('./config.yml?rev=20261017-fix-single-config', {cache: 'no-store'});
+        if (!response.ok) throw new Error('No se pudo cargar config.yml (' + response.status + ')');
+        const config = jsyaml.load(await response.text());
+        if (!config || !Array.isArray(config.collections)) throw new Error('La configuración del editor no es válida');
+        // La configuración se proporciona directamente: impedir que Decap vuelva
+        // a cargar config.yml y duplique la colección "web".
+        config.load_config_file = false;
+        CMS.init({config: config});
+      } catch (error) {
+        const warning = document.createElement('p');
+        warning.style.cssText = 'padding:24px;font:16px Arial;color:#a11';
+        warning.textContent = 'No se pudo abrir el administrador: ' + error.message;
+        document.body.appendChild(warning);
+      }
+    })();
   </script>
 </body>
 </html>
