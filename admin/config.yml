@@ -80,9 +80,19 @@ collections:
               - {label: "Referencia científica", name: "reference", widget: "markdown", minimal: true, buttons: ["bold", "italic", "link"]}
               - {label: "DOI", name: "doi", widget: "string", required: false}
               - {label: "Enlace al estudio", name: "source_url", widget: "string", required: false}
-              - label: "Vídeo resumen del artículo (opcional)"
+              - label: "Adjuntar vídeo resumen (opcional)"
                 name: "video_url"
+                widget: "file"
+                required: false
+                media_folder: "/assets/uploads"
+                public_folder: "/mindfit-training-web/assets/uploads"
+                media_library:
+                  config:
+                    multiple: false
+                hint: "Adjunta un vídeo MP4 o WebM desde tu dispositivo. Importante: archivos grandes (como un vídeo de 45 MB) pueden superar el límite de publicación de la API de GitHub; en ese caso usa el campo de enlace de abajo."
+              - label: "Enlace al vídeo resumen (opcional)"
+                name: "video_link"
                 widget: "string"
                 required: false
-                hint: "Pega la dirección pública directa del vídeo MP4 o WebM alojado por separado (también admite enlaces de YouTube o Vimeo). No subas aquí el archivo: los vídeos grandes bloquean la publicación a través de GitHub. Si lo dejas vacío, no aparecerá ningún vídeo."
+                hint: "Alternativa a adjuntar un archivo: pega la URL pública directa de un MP4/WebM o un enlace de YouTube/Vimeo. Si hay archivo y enlace, se mostrará el archivo adjunto."
               - {label: "Destacado", name: "featured", widget: "boolean", default: false, required: false}
