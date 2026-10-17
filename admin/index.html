@@ -4,28 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <title>MindFit Training | Administración</title>
 </head>
 <body>
-  <script>window.CMS_MANUAL_INIT = true;</script>
-  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.17.0-beta.0/dist/decap-cms.js"></script>
-  <script>
-    (async function () {
-      try {
-        const response = await fetch('./config.yml?rev=20261017-video-upload-2', {cache: 'no-store'});
-        if (!response.ok) throw new Error('No se pudo cargar la configuración (' + response.status + ')');
-        const config = jsyaml.load(await response.text());
-        if (!config || !Array.isArray(config.collections)) throw new Error('Configuración del editor no válida');
-        CMS.init({config: config});
-      } catch (error) {
-        const message = document.createElement('p');
-        message.style.cssText = 'padding:24px;font:16px Arial;color:#9b1c1c';
-        message.textContent = 'No se pudo iniciar el editor: ' + error.message;
-        document.body.appendChild(message);
-      }
-    })();
-  </script>
 </body>
 </html>
